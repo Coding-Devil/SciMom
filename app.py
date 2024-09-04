@@ -13,12 +13,10 @@ model_info = {
         'description': "Zephyr is a **Large Language Model (LLM)** trained to act as a helpful assistant. "
                        "[Zephyr-7B-β](https://huggingface.co/HuggingFaceH4/zephyr-7b-beta) is a fine-tuned version "
                        "of mistralai/Mistral-7B-v0.1, trained using Direct Preference Optimization (DPO).",
-        'logo': 'https://huggingface.co/HuggingFaceH4/zephyr-7b-alpha/resolve/main/thumbnail.png'
     },
     "Meta-Llama-3-8B": {
         'description': "Llama (3) is a **Large Language Model (LLM)** designed for question and answer interactions, "
-                       "created by [Meta's AI](https://llama.meta.com/), with over **8 billion parameters.**",
-        'logo': 'Llama_logo.png'
+                       "created by [Meta's AI](https://llama.meta.com/), with over **8 billion parameters.**"
     }
 }
 
