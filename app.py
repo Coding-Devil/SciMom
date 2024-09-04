@@ -1,16 +1,5 @@
 import streamlit as st
 import os
-from dotenv import load_dotenv, dotenv_values
-from openai import OpenAI
-import numpy as np
-
-load_dotenv()
-
-# initialize the client
-client = OpenAI(
-  base_url="https://api-inference.huggingface.co/v1",
-  api_key=os.environ.get('HUGGINGFACEHUB_API_TOKEN')  # Replace with your token
-)
 
 # Create supported models
 model_links = {
