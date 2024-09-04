@@ -34,7 +34,6 @@ selected_model = st.sidebar.selectbox("Select Model", models)
 # Display selected model info
 st.sidebar.markdown(f"You're now chatting with **{selected_model}**")
 st.sidebar.markdown(model_info[selected_model]['description'])
-st.sidebar.image(model_info[selected_model]['logo'])
 
 # Temperature slider
 temp_values = st.sidebar.slider('Select a temperature value', 0.0, 1.0, 0.5)
