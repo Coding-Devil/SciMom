@@ -13,18 +13,16 @@ client = OpenAI(
 
 # Create supported model
 model_links = {
-    "Meta-Llama-3-8B": "meta-llama/Meta-Llama-3-8B-Instruct"
+    "Zephyr-7B": "HuggingFaceH4/zephyr-7b-beta"
 }
 
 # Pull info about the model to display
 model_info = {
-    "Meta-Llama-3-8B": {
-        'description': """The Llama (3) model is a **Large Language Model (LLM)** designed to assist with question and answer interactions.\n
-        \nThis model was created by Meta's AI team and has over 8 billion parameters.\n
-        **Training**: The model was fine-tuned on science textbooks from the NCERT curriculum using Docker AutoTrain to ensure it can provide relevant and accurate responses in the education domain.\n
-        **Purpose**: This version of Llama has been trained specifically for educational purposes, focusing on answering science-related queries in a clear and simple manner to help students and teachers alike.\n"""
+    "Zephyr-7B-β": {
+        'description': """The **Zephyr 7B β** is a next-gen **GPT-like Large Language Model (LLM)** fine-tuned from Mistral-7B-v0.1, containing 7 billion parameters. This model is optimized for educational tasks and excels at science-related Q&A with high accuracy and performance.\n"""
     }
 }
+
 
 # Reset the conversation
 def reset_conversation():
@@ -37,15 +35,25 @@ st.title("Sci-Mom 👩‍🏫 ")
 st.subheader("AI chatbot for Solving your doubts 📚 :)")
 
 # Custom description for SciMom in the sidebar
-st.sidebar.write("Built for my mom, with love ❤️. This model is pretrained with textbooks of Science NCERT.")
-st.sidebar.write("Base-Model used: Meta Llama, trained using: Docker AutoTrain.")
+st.sidebar.write("Built for my mom, with love ❤️.")
 
-# Add technical details in the sidebar
-st.sidebar.markdown(model_info["Meta-Llama-3-8B"]['description'])
-st.sidebar.markdown("*By Gokulnath ♔ *")
+st.sidebar.markdown(model_info["Zephyr-7B-β"]['description'])
+st.sidebar.markdown("""
+### Zephyr 7B β 🤖
+Your personal science assistant, built with **7 billion parameters** to help with all your science Q&As.
+
+- **Trained using Ultrachat Feedbacks**!
+- **Quick & Smart**: Handles easy to tough topics like a pro.
+- **Accurate**: Reliable answers every time.
+
+Need help with science? Zephyr’s got your back! 🔬📘
+""")
+
+
+st.sidebar.markdown("By Gokulnath ♔")
 
 # If model selection was needed (now removed)
-selected_model = "Meta-Llama-3-8B"  # Only one model remains
+selected_model = "Zephyr-7B"  # Only one model remains
 
 if "prev_option" not in st.session_state:
     st.session_state.prev_option = selected_model
