@@ -14,7 +14,7 @@ Accurate: Reliable answers every time.
 This model is a fine-tuned version of [mistralai/Mistral-7B-v0.1](https://huggingface.co/mistralai/Mistral-7B-v0.1) on the HuggingFaceH4/ultrachat_200k dataset. It is the SFT model that was used to train Zephyr-7B-β with Direct Preference Optimization.
 
 It achieves the following results on the evaluation set:
-- Loss: 0.9399
+- DPO expected match: 0.9399
 
 ## Model description
 
