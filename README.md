@@ -1,4 +1,4 @@
-
+ 
 
 # Zephyr 7B β 🤖
 > The Zephyr 7B β is a next-gen GPT-like Large Language Model (LLM) fine-tuned from Mistral-7B-v0.1, containing 7 billion parameters. This model is optimized for educational tasks and excels at science-related Q&A with high accuracy and performance.
